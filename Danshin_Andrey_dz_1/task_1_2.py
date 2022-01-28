@@ -3,7 +3,6 @@
 dataset=[]
 for number in range(1, 1000, 2):
     dataset.append(number ** 3)
-print(dataset)
 def sum_list_1(dataset):
     for i in range(len(dataset)):
         summary = 0
@@ -15,13 +14,12 @@ def sum_list_1(dataset):
             result =+ dataset[i]
     return result
 print(sum_list_1(dataset))
-
+print('end')
 #Задание b
 
 dataset=[]
 for number in range(1, 1000, 2):
     dataset.append((number ** 3)+17)
-print(dataset)
 def sum_list_2(dataset):
     for i in range(len(dataset)):
         summary = 0
@@ -33,13 +31,12 @@ def sum_list_2(dataset):
             result =+ dataset[i]
     return result
 print(sum_list_2(dataset))
-
+print('end')
 #Задание с
 
 dataset=[]
 for number in range(1, 1000, 2):
     dataset.append(number ** 3)
-print(dataset)
 def sum_list_1(dataset):
     for i in range(len(dataset)):
         summary = 0
