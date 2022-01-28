@@ -15,3 +15,4 @@ def transform_string(number):
         return f'{number} процентов'
 for n in range(1, 101):
     print(transform_string(n))
+print('end')
