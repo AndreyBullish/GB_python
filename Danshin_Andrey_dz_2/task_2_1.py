@@ -51,5 +51,6 @@ def convert_list(list_in):
 
 my_list = ['в', '5', 'часов', '17', 'минут', 'температура', 'воздуха', 'была', '+5', 'градусов']
 result = convert_list(my_list)
+#выводим в виде строки
 print(' '.join(result))
 print('end')
