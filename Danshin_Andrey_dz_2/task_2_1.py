@@ -12,7 +12,7 @@ def convert_list(list_in):
             x = my_list.index(i)
             my_list[x] = f"', '{i}', '"
 
-#фильтруем еще более кривым способом элементы "+5"
+#фильтруем еще более кривым способом элемент "+5"
     for i in my_list:
         if i.count('+'):
             if len(i) < 3:
@@ -41,7 +41,7 @@ def convert_list(list_in):
             x = my_list.index(i)
             my_list[x] = f" '{i}' "
 
-#фильтруем еще более кривым способом элементы "+5"
+#фильтруем еще более кривым способом элемент "+5"
     for i in my_list:
         if i.count('+'):
             if len(i) < 3:
