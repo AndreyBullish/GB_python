@@ -20,3 +20,4 @@ def convert_name_extract(list):
 my_list = ['инженер-конструктор Игорь', 'главный бухгалтер МАРИНА', 'токарь высшего разряда нИКОЛАй', 'директор аэлита']
 result = convert_name_extract(my_list)
 print(result)
+print('end')
