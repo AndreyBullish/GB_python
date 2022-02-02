@@ -49,3 +49,4 @@ def check_five_max_elements(list_in: list) -> list:
 
 result_4 = check_five_max_elements(result_3)
 print(result_4)
+print('end')
