@@ -22,10 +22,7 @@ def currency_rates_adv(code: str) -> float:
         month = int(date_value[3:5])
         day = int(date_value[0:2])
         date = datetime.date(year, month, day)
-
         return result_value, date
-
-        kurs, date_value = currency_rates_adv("USD")
 
 print(currency_rates_adv("USD"))
 print(currency_rates_adv("eur"))
