@@ -1,5 +1,6 @@
 import requests
 
+
 def currency_rates(code: str) -> float:
     """возвращает курс валюты `code` по отношению к рублю"""
     url = 'http://www.cbr.ru/scripts/XML_daily.asp'
