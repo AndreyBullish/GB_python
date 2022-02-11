@@ -14,9 +14,9 @@ C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\virt>
 C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>activate.bat
 (my_virt) C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>pip freeze
 
-(my_virt) C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>pip install pillow #не дает поставить версию 7.1.1 - ругается
+(my_virt) C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>pip install pillow==9.0.0 #не дает поставить версию 7.1.1 - ругается
 (my_virt) C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>pip freeze
-Pillow==9.0.1
+Pillow==9.0.0
 (my_virt) C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>deactivate.bat
 C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>
 
