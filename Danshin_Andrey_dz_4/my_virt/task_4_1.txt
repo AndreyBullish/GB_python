@@ -1,0 +1,22 @@
+C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>pip freeze
+C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>pip install pillow
+Collecting pillow
+  Using cached Pillow-9.0.1-cp310-cp310-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-9.0.1
+WARNING: You are using pip version 21.2.4; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>pip freeze
+Pillow==9.0.1
+
+C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\virt>python -m venv my_virt
+C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>activate.bat
+(my_virt) C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>pip freeze
+
+(my_virt) C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>pip install pillow==9.0.0 #не дает поставить версию 7.1.1 - ругается
+(my_virt) C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>pip freeze
+Pillow==9.0.0
+(my_virt) C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>deactivate.bat
+C:\Users\andre\PycharmProjects\pythonProject\GB_python\Danshin_Andrey_dz_4\my_virt\Scripts>
+
