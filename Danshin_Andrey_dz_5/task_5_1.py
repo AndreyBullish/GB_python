@@ -3,7 +3,6 @@ def odd_nums(number: int) -> int:
     for num in range(1, number + 1, 2):
         yield num
 
-
 '''
 odd_to_5 = odd_nums(5)
 print(next(odd_to_5)) #1
