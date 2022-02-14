@@ -4,7 +4,7 @@ def check_gen(tutors: list, klasses: list):
     if len(tutors) > len(klasses):
         delta = len(tutors) - len(klasses)
         klasses.extend([None for i in range(delta)])
-    for list_sum in zip(tutors, klasses): #не очень понятно почему если без for записывать то генератор будет выдавать только одно значение
+    for list_sum in zip(tutors, klasses): #не очень понятно почему если без for записывать, то генератор будет выдавать только одно значение
         yield list_sum
 
 generator = check_gen(tutors, klasses)
