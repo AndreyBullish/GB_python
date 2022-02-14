@@ -1,10 +1,8 @@
-import random
-
-
 def odd_nums(number: int) -> int:
     """Генератор, возвращающий по очереди нечетные целые числа от 1 до number (включительно)"""
     for num in range(1, number + 1, 2):
         yield num
+
 
 '''
 odd_to_5 = odd_nums(5)
