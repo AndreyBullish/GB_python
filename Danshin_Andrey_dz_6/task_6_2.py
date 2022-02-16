@@ -25,7 +25,9 @@ def get_key(dict, value):
     for k, v in dict_ip_count_list.items():
         if v == value:
             return k
+
 ip_spamer_print = get_key(dict_ip_count_list, ip_spamer_count)
+#программа выполняется 3 мин, @Анатолий, подскажите как можно ускорить? или надо было делать не через отдельный список и словарь
 print(f'ip спамера = {ip_spamer_print}, кол-во запросов = {ip_spamer_count}')
 print('\n''end')
 
