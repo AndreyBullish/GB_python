@@ -3,7 +3,6 @@ from pprint import pprint
 
 
 response = requests.get('https://raw.githubusercontent.com/elastic/examples/master/Common%20Data%20Formats/nginx_logs/nginx_logs')
-print(response)
 web_text = response.text
 with open('nginx_logs.txt', 'w', encoding='utf-8') as fw:
      fw.writelines(web_text)
