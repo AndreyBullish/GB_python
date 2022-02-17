@@ -17,9 +17,8 @@ def generate_random_id(length):
 def generate_random_hobby(length):
      letters_lower = string.ascii_lowercase
      rand_string = ''.join(random.choice(letters_lower) for i in range(length))
-     random_hobby_list = (f'{rand_string},' for i in range(random_number2))
-     random_hobby_str = ''.join(random_hobby_list)
-     return random_hobby_str
+     random_hobby_list = (list(f'{rand_string},' for i in range(random_number2)))
+     return random_hobby_list
 
 #создаем документы со именами и хобби
 with open('users.csv', 'w', encoding='utf-8') as fw:
@@ -48,7 +47,7 @@ with open('users.csv', 'r', encoding='utf-8') as f1r, open ('hobby.csv', 'r', en
         with open('task_6_3_result.json', 'w', encoding='utf-8') as wjf:
             json.dump(dict_user_hobby, wjf, ensure_ascii=False, indent=2)
     else:
-        sys.exit(1)
+        print(int(1)) #тут я не понял что значит выходим из скрипта с кодом 1
 
 print('\n''end')
 

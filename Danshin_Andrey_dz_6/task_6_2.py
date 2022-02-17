@@ -7,13 +7,14 @@ web_text = response.text
 with open('nginx_logs.txt', 'w', encoding='utf-8') as fw:
      fw.writelines(web_text)
 def get_parse_attrs(line: str) -> tuple:
-    remote_addr = row.rpartition(' - - ')[0]
+    remote_addr = line.rpartition(' - - ')[0]
     return remote_addr
 
 ip_list = list()
-with open('nginx_logs.txt', 'r', encoding='utf-8') as fr:
-    for row in fr:
-        ip_list.append(get_parse_attrs(row))
+file_1 = open('nginx_logs.txt', 'r', encoding='utf-8')
+for line in file_1:
+    ip_list.append(get_parse_attrs(line))
+file_1.close()
 
 ip_count_list = []
 for i in ip_list:
