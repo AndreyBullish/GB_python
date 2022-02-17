@@ -1,7 +1,6 @@
 import random
 import sys
 import json
-import string
 
 
 names = ['Александр', 'Андрей', 'Сергей', 'Михаил', 'Антон']
@@ -33,7 +32,7 @@ with open('hobby.csv', 'w', encoding='utf-8') as fw:
      for i in range(5):
          fw.write(f'{generate_random_hobby()}, {generate_random_hobby()}\n')
 
-#собираем словарь, проверяя разницу между длинами user hobby
+#собираем текст, проверяя разницу между длинами user hobby
 list_users = []
 list_hobby = []
 
@@ -48,9 +47,10 @@ with open('users.csv', 'r', encoding='utf-8') as f1r, open('hobby.csv', 'r', enc
         while i < delta:
             list_hobby.append('None')
             i += 1
-        dict_user_hobby = dict(zip(list_users, list_hobby))
-        with open('task_6_3_result.json', 'w', encoding='utf-8') as wjf:
-            json.dump(dict_user_hobby, wjf, ensure_ascii=False, indent=2)
+        with open('users_hobby.txt', 'w', encoding='utf-8') as wjf:
+            for i in range(len(list_users)):
+                wjf.write(f'{list_users[i]}: {list_hobby[i]}\n')
     else:
         sys.exit(1)
+
     print('\n''end')
