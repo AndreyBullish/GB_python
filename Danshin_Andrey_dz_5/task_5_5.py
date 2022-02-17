@@ -13,11 +13,12 @@ def get_uniq_numbers2(src: list):
     num_set = set()
     num_set_final = set()
     for num in src:
-        if not num in num_set:
+        if num not in num_set:
             num_set_final.add(num)
         else:
             num_set_final.discard(num)
         num_set.add(num)
+    return num_set_final
 print(get_uniq_numbers2(src))
 
 uniq_numbers = [num for num in src if src.count(num) == 1]
