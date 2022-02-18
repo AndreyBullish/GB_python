@@ -13,7 +13,7 @@ else:
     with open('bakery.csv', 'r+', encoding='utf-8') as fr:
         content = fr.read()
         content_str = content.split('\n')
-        content_str_accurate = content_str[:-1]
+        content_str_accurate = content_str
         if int(number_sum_int) > (len(content_str_accurate)):
             print('элемента с таким номером нет')
             sys.exit(1)
