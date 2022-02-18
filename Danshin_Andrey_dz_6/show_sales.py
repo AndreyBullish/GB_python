@@ -10,6 +10,7 @@ for i in range(len(sale_sum)):
         print('Вы ввели неверное кол-во аргументов, кол-во аргументов должно быть от 0 до 2 (включительно)')
         sys.exit(1)
 
+#может немного по-колхозному, но задача больно сложная, имхо
 with open('bakery.csv', 'r', encoding='utf-8') as fr:
     if len(sys.argv[1:]) == 0:
         print(fr.read())
