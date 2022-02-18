@@ -23,17 +23,20 @@ def generate_random_hobby():
 
 
 #создаем документы со именами и хобби
-with open('users.csv', 'w', encoding='utf-8') as fw:
+user_file = input('Введите название для документа с ФИО пользователей сайта: ')
+hobby_file = input('Введите название для документа со списком хобби пользователей сайта: ')
+with open(user_file, 'w', encoding='utf-8') as fw:
      for i in range(6):
          fw.write(f'{generate_random_id()}\n')
 
-with open('hobby.csv', 'w', encoding='utf-8') as fw:
+with open(hobby_file, 'w', encoding='utf-8') as fw:
      for i in range(5):
          fw.write(f'{generate_random_hobby()}, {generate_random_hobby()}\n')
 
 #собираем текст, проверяя разницу между длинами user hobby
 list_users = []
 list_hobby = []
+result_file = input('Введите название для документа вывода результатов: ')
 
 with open('users.csv', 'r', encoding='utf-8') as f1r, open('hobby.csv', 'r', encoding='utf-8') as f2r:
     for row in f1r:
@@ -46,7 +49,7 @@ with open('users.csv', 'r', encoding='utf-8') as f1r, open('hobby.csv', 'r', enc
         while i < delta:
             list_hobby.append('None')
             i += 1
-        with open('users_hobby.txt', 'w', encoding='utf-8') as wjf:
+        with open(result_file, 'w', encoding='utf-8') as wjf:
             for i in range(len(list_users)):
                 wjf.write(f'{list_users[i]}: {list_hobby[i]}\n')
     else:
