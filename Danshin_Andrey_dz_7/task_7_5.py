@@ -26,11 +26,11 @@ def func_dict_size_files(BASE_DIR):
     dict_out = dict()
 
     #я знаю что сделал по-колхозному, но ДЗ_7 все очень сложное, жаль что было мало времени на его выполнение, так как я остаю от курса
-    list_less_10 = []
+    list_less_10 = [] #здесь кол-во элементов
     list_less_100 = []
     list_less_1000 = []
     list_less_10000 = []
-    type_files_list_less_10 = []
+    type_files_list_less_10 = [] #здесь типы элементов
     type_files_list_less_100 = []
     type_files_list_less_1000 = []
     type_files_list_less_10000 = []
