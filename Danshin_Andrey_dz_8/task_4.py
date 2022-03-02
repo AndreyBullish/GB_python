@@ -1,4 +1,6 @@
 from functools import wraps
+
+
 def func_filter(*args):
     if len(args) != 1:
         msg = f'wrong type of {args}'
