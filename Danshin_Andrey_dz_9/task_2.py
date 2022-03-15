@@ -4,8 +4,8 @@ class Road:
         :param length: длинна в метрах
         :param width: ширина в метрах
         """
-        self.length = length
-        self.width = width
+        self._length = length
+        self._width = width
 
     def calculate(self, height: int = 5, mass_m_2: int = 25) -> int:
         """
@@ -17,7 +17,7 @@ class Road:
         # self.length * self.width * self.height * self.mass_m_2
         self.height = height
         self.mass_m_2 = mass_m_2
-        result = (self.length * self.width * self.height * self.mass_m_2)/1000
+        result = (self._length * self._width * self.height * self.mass_m_2)/1000
         return result
 
 if __name__ == '__main__':
