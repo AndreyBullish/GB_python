@@ -4,17 +4,17 @@ class Worker:
         self.name = name
         self.surname = surname
         self.position = position
-        self.income = income
+        self._income = income
 
 
 class Position(Worker):
 
     def get_full_name(self) -> str:
-        return f'{self.name} {self.surname}'
+        return f'{self.name.title()} {self.surname.title()}'
 
     def get_total_income(self) -> int:
-        for k,v in self.income.items():
-            result = list(self.income.values())[0] + list(self.income.values())[1]
+        for k,v in self._income.items():
+            result = list(self._income.values())[0] + list(self._income.values())[1]
             return result
 
 
