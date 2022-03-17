@@ -6,10 +6,12 @@ class Car:
         self.color = color
         self.name = name
 
+
     def go(self) -> None:
         speed_plus_15 = self.speed + 15
         result = f'Машина {self.name} повысила скорость на 15: {speed_plus_15}'
         return print(result)
+
 
     def stop(self) -> None:
         self.speed = self.speed - self.speed
@@ -22,14 +24,7 @@ class Car:
             print(f'{self.name}({self.__class__.__name__}): движется {direction}')
         else:
             raise ValueError('нераспознаное направление движения')
-        """
-        Принимает направление движения автомобиля
-        :param direction: строковое представление направления движения, может принимать только
-            следующие значения: 'направо', 'налево', 'прямо', 'назад'
-        :return: в stdout сообщение по формату
-            '<название марки машины>: движется <direction>'
-        """
-        pass  # Ваш код здесь
+
 
     def show_speed(self) -> None:
         print(f'{self.name}: текущая скорость {self.speed} км/час')
